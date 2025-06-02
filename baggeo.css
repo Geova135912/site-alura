@@ -1,92 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-
-body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-
+/* Conteúdo principal centralizado */
 .conteudo-principal {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-
+/* Título principal maior e estilizado */
 .titulo-principal {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
 }
 
+.titulo-principal span {
+  color: #e67e22; /* cor laranja para o underline */
+  font-weight: 900;
+  font-size: 3.2rem;
+  vertical-align: middle;
+}
 
+/* Botões com estilo */
 .botoes {
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .botao {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
+  background-color: #ecf0f1;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
 }
 
 .botao:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+  background-color: #e67e22;
+  color: white;
 }
 
-
-.aba-conteudo {
-    margin-top: 20px;
+.botao.ativo {
+  background-color: #e67e22;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(230, 126, 34, 0.6);
 }
 
+/* Conteúdo das abas */
+.abas-textos {
+  text-align: center;
+}
 
+/* Título da aba principal */
 .aba-conteudo-titulo-principal {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 10px;
 }
 
+/* Subtítulo da aba */
 .aba-conteudo-titulo-secundario {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #7f8c8d;
+  margin-bottom: 25px;
 }
 
-
+/* Contador */
 .contador {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 .contador-digito {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    border-radius: 10px;
-    width: 60px;
+  background-color: #ecf0f1;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  min-width: 70px;
 }
 
 .contador-digito-numero {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #e67e22;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
 }
 
 .contador-digito-texto {
-    font-size: 0.8rem;
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  font-weight: 600;
 }
