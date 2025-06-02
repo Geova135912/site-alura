@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 :root {
-    --cor-de-fundo: #2B1B0F; /* tom de madeira escura */
-    --verde: #BFAE7C; /* dourado antigo */
-    --branco: #F5F0E1; /* tom de pergaminho */
-    --botao-ativo: #5C3A21; /* marrom escuro */
-    --botao-inativo: rgba(92, 58, 33, 0.5); /* tom de couro */
+    --cor-de-fundo: #2B1B0F; 
+    --verde: #BFAE7C; 
+    --branco: #F5F0E1; 
+    --botao-ativo: #5C3A21; 
+    --botao-inativo: rgba(92, 58, 33, 0.5);
     --texto-fundo: rgba(92, 58, 33, 0.3);
 }
 
