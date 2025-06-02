@@ -1,98 +1,92 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
+
 
 body {
-  background: linear-gradient(135deg, #e0f7fa, #80deea);
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
+
 
 .conteudo-principal {
-  background: #ffffffcc;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  max-width: 600px;
-  width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
 }
+
 
 .titulo-principal {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #26c6da;
-  padding-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
+
 .botoes {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .botao {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: #26c6da;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.3s;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .botao:hover {
-  background-color: #00acc1;
-  transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-.botao.ativo {
-  background-color: #007c91;
+
+.aba-conteudo {
+    margin-top: 20px;
 }
 
-.abas-textos {
-  margin-top: 20px;
-}
 
 .aba-conteudo-titulo-principal {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .aba-conteudo-titulo-secundario {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
+
 .contador {
-  display: flex;
-  gap: 15px;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .contador-digito {
-  background: #f0f0f0;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 60px;
 }
 
 .contador-digito-numero {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .contador-digito-texto {
-  font-size: 0.9rem;
-  color: #777;
+    font-size: 0.8rem;
 }
