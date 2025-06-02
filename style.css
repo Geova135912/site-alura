@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 :root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --cor-de-fundo: #2B1B0F; /* tom de madeira escura */
+    --verde: #BFAE7C; /* dourado antigo */
+    --branco: #F5F0E1; /* tom de pergaminho */
+    --botao-ativo: #5C3A21; /* marrom escuro */
+    --botao-inativo: rgba(92, 58, 33, 0.5); /* tom de couro */
+    --texto-fundo: rgba(92, 58, 33, 0.3);
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'MedievalSharp', cursive;
 }
-
 
 .conteudo-principal {
     display: flex;
@@ -29,32 +28,35 @@ body {
 .titulo-principal {
     text-align: left;
     width: 100%;
-    font-size: 32px;
+    font-size: 36px;
+    border-bottom: 2px solid var(--verde);
+    padding-bottom: 8px;
 }
 
 .titulo-principal span {
     color: var(--verde);
 }
 
-
 .botao {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'MedievalSharp', cursive;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
     justify-content: center;
     padding: 1em;
-    font-size: 18px;
+    font-size: 20px;
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
+    cursor: pointer;
+    letter-spacing: 1px;
 }
 
 .botao:first-child {
-    border-radius: 40px 40px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .botoes {
@@ -69,7 +71,8 @@ body {
 .abas-textos {
     background-color: var(--texto-fundo);
     padding: 40px;
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid var(--verde);
 }
 
 .aba-conteudo.ativo {
@@ -81,14 +84,17 @@ body {
 }
 
 .aba-conteudo-titulo-principal {
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
+    text-shadow: 1px 1px #000;
 }
 
 .aba-conteudo-titulo-secundario {
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .contador {
@@ -101,19 +107,22 @@ body {
     padding: 0 16px;
     text-align: center;
     min-width: 100px;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid var(--verde);
+    border-radius: 8px;
+    margin: 8px;
 }
 
 .contador-digito-numero {
-    font-size: 80px;
+    font-size: 72px;
     margin: 0;
-
 }
 
 .contador-digito-texto {
     color: var(--verde);
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
-
+    font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
@@ -122,10 +131,10 @@ body {
     }
 
     .botao:first-child {
-        border-radius: 40px 0 0 0;
+        border-radius: 10px 0 0 0;
     }
 
     .botao:last-child {
-        border-radius: 0 40px 0 0;
+        border-radius: 0 10px 0 0;
     }
 }
