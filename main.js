@@ -74,7 +74,7 @@ function classificaSenha(tamanhoAlfabeto) {
     } else if (entropia = 0) {
         tamanhoSenha = 0;
         senha = 'undefined';
-        forcaSenha.classList.add(' ');}
+        forcaSenha.classList.add('fraca');}
     const valorEntropia = document.querySelector('.entropia');
     valorEntropia.textContent = "Um computador pode levar até " + Math.floor(2 ** entropia / (100e6 * 60 * 60 * 24)) + " dias para descobrir essa senha.";
 }
