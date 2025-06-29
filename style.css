@@ -2,14 +2,13 @@
 
 :root {
     --branco: #F1F1F1;
-    --cor-de-fundo: #0A0F1C;
-    --fundo-senha: #131C3A;
-    --fundo-texto: #1A223F;
-    --borda: #00FFFF;
+    --cor-de-fundo: #121212;        /* Preto carvão moderno */
+    --fundo-senha: #1E1E1E;         /* Tom intermediário */
+    --fundo-texto: #2A2A2A;         /* Mais claro, mas ainda neutro */
+    --borda: #00FF85;               /* Verde neon para contraste */
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
     --neon-verde: #00FF85;
-    --neon-azul: #00FFFF;
     --neon-roxo: #9D00FF;
     --vermelho-alerta: #FF0033;
     --amarelo-alerta: #FFD700;
